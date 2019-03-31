@@ -1,4 +1,4 @@
-# !/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
@@ -104,7 +104,7 @@ def main():
 
 
 
-    user = kopano.Server(options).user(options.user)
+    user = kopano.server(options).user(options.user)
     print('Running script for \'{}\''.format(_encode(user.name)))
 
     if options.wastebasket:
